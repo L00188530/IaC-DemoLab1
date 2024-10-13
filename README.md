@@ -3,5 +3,6 @@
 
 ### List of Tasks/Features we are going to perform
 
-- Create EC2 instance with Parameters
+- Create Parameters
+- Create EC2 instance
 - Add VPC
