@@ -1,0 +1,19 @@
+Parameters:
+  InstanceTypeParameter:
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.nano
+      - t2.micro
+    Description: Enter t2.nano or t2.micro. The default is set as t2.micro.
+  AppPort:
+    Description: Port for the application to use 8180-8190
+    Type: Number
+    MinValue: 8180
+    MaxValue: 8190
+Resources:
+  EC2ParamDemo:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceTypeParameter
+      ImageId: ami-0fff1b9a61dec8a5f
